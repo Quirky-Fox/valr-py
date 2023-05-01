@@ -65,11 +65,11 @@ Installation
 
 ::
 
-    pip install valr-python
+    pip install valr-py
 
 You can also install the in-development version with::
 
-    pip install https://github.com/jonathanelscpt/valr-python/archive/master.zip
+    pip install https://github.com/Quirky-Fox/valr-py/archive/master.zip
 
 
 
@@ -87,8 +87,8 @@ To use the **synchronous** REST API client:
 
 .. code-block:: python
 
-    >>> from valr_python import Client
-    >>> from valr_python.exceptions import IncompleteOrderWarning
+    >>> from valr_py import Client
+    >>> from valr_py.exceptions import IncompleteOrderWarning
     >>> from decimal import Decimal
     >>>
     >>> c = Client(api_key='api_key', api_secret='api_secret')
@@ -129,9 +129,9 @@ To use the WebSocket API client:
     >>> import asyncio
     >>> from typing import Dict
     >>> from pprint import pprint
-    >>> from valr_python import WebSocketClient
-    >>> from valr_python.enum import TradeEvent
-    >>> from valr_python.enum import WebSocketType
+    >>> from valr_py import WebSocketClient
+    >>> from valr_py.enum import TradeEvent
+    >>> from valr_py.enum import WebSocketType
     >>>
     >>> def pretty_hook(data: Dict):
     ...    pprint(data)

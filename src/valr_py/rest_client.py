@@ -95,7 +95,7 @@ class Client(MethodClientABC):
                         return self._do(method=method, path=path, is_authenticated=is_authenticated, data=data)
                     except (KeyError, ValueError):
                         raise RESTAPIException(res.status_code,
-                                               f'valr-python: HTTP 429 processing failed. '
+                                               f'valr-py: HTTP 429 processing failed. '
                                                f'HTTP ({res.status_code}): {res.headers}')
                 else:
                     # avoid JSONDecodeError - VALR 429 response has html body
@@ -106,4 +106,4 @@ class Client(MethodClientABC):
             raise he
         except JSONDecodeError as jde:
             raise RESTAPIException(res.status_code,
-                                   f'valr-python: unknown API error. HTTP ({res.status_code}): {jde.msg}')
+                                   f'valr-py: unknown API error. HTTP ({res.status_code}): {jde.msg}')

@@ -77,7 +77,10 @@ class Client(MethodClientABC):
 
         try:
             res.raise_for_status()
-            e = res.json()
+            try:
+                e = res.json()
+            except:
+                e = {}
             self._raise_for_api_error(e)
             # provide warning with bundled response dict for incomplete transactions
             if res.status_code == 202:

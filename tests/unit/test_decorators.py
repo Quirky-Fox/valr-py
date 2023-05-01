@@ -1,8 +1,8 @@
 import pytest
 
-from valr_python.decorators import check_xor_attrs
-from valr_python.decorators import requires_authentication
-from valr_python.exceptions import RequiresAuthentication
+from valr_py.decorators import check_xor_attrs
+from valr_py.decorators import requires_authentication
+from valr_py.exceptions import RequiresAuthentication
 
 
 class DecoratorStub(object):

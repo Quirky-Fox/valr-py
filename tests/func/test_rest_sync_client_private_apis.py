@@ -2,8 +2,8 @@ from decimal import Decimal
 
 import pytest
 
-from valr_python.exceptions import RequiresAuthentication
-from valr_python.rest_base import BaseClientABC
+from valr_py.exceptions import RequiresAuthentication
+from valr_py.rest_base import BaseClientABC
 
 BASE_URL = BaseClientABC._REST_API_URL
 

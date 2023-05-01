@@ -1,6 +1,6 @@
 import json
 
-from valr_python.utils import _sign_request
+from valr_py.utils import _sign_request
 
 
 def test_request_signature_basic(sync_client):

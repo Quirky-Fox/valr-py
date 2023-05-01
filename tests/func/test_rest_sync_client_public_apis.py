@@ -1,4 +1,4 @@
-from valr_python.rest_base import BaseClientABC
+from valr_py.rest_base import BaseClientABC
 
 BASE_URL = BaseClientABC._REST_API_URL
 

@@ -1,7 +1,7 @@
 import pytest
 import requests_mock
 
-from valr_python import Client
+from valr_py import Client
 
 
 @pytest.fixture

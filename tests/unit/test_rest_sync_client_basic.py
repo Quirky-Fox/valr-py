@@ -1,11 +1,11 @@
 import pytest
 from requests.exceptions import HTTPError
 
-from valr_python.exceptions import APIError
-from valr_python.exceptions import IncompleteOrderWarning
-from valr_python.exceptions import RequiresAuthentication
-from valr_python.exceptions import RESTAPIException
-from valr_python.exceptions import TooManyRequestsWarning
+from valr_py.exceptions import APIError
+from valr_py.exceptions import IncompleteOrderWarning
+from valr_py.exceptions import RequiresAuthentication
+from valr_py.exceptions import RESTAPIException
+from valr_py.exceptions import TooManyRequestsWarning
 
 
 def test_client_attrs(sync_client):
